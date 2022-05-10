@@ -1,0 +1,5 @@
+qdrant-client==0.7.0
+img2vec_pytorch
+more-itertools
+torch
+streamlit

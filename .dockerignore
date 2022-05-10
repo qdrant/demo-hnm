@@ -1,0 +1,14 @@
+.git/
+.cache/
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+.keras/
+.local/
+.nv/
+data/
+conf/
+storage/
+test/
+docker/
+*.ipynb
