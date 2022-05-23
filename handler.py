@@ -25,7 +25,7 @@ class QdrantSearch:
         self,
         query: Union[int, Text],
         num_results: int = conf.NUM_RESULTS,
-        filters: Dict[Text, List[Text]] = {},
+            filters=None,
     ):
         """
         Queries Qdrant server for the similar entries for a provided query.
@@ -36,6 +36,8 @@ class QdrantSearch:
         :param filters:
         :return:
         """
+        if filters is None:
+            filters = {}
         if isinstance(query, int):
             response = self.client.http.points_api.recommend_points(
                 collection_name=conf.COLLECTION_NAME,

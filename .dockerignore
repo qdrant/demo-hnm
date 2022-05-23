@@ -12,3 +12,4 @@ storage/
 test/
 docker/
 *.ipynb
+venv/
