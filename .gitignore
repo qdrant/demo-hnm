@@ -11,4 +11,3 @@ conf/
 storage/
 test/
 docker/
-*.ipynb
